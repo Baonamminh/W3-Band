@@ -1,0 +1,136 @@
+@media (min-width: 64rem) {}
+
+@media (min-width: 46.25rem) and (max-width: 63.938rem) {
+
+    #content .content-about,
+    #content .content-tour,
+    #content .content-contact {
+        padding: 64px 0;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 45.625rem) {
+    #header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #000;
+        height: 46.5px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav>li:first-child {
+        display: inline-block;
+    }
+
+    #nav li {
+        display: block;
+        position: relative;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        text-decoration: none;
+        line-height: 36px;
+        padding: 0px 22px;
+    }
+
+    .menu-button {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu-button .menu-icon {
+        color: #fff;
+        line-height: 46.5px;
+        padding: 0 22px;
+        display: block;
+    }
+
+    .menu-button .menu-icon:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+
+    #search-button .search-icon {
+        color: #fff;
+        line-height: 46.5px;
+        padding: 0 22px;
+        display: none;
+    }
+
+
+    #content .content-about,
+    #content .content-tour,
+    #content .content-contact {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    #content .list-item {
+        padding: 15px 100px;
+        width: 100%;
+    }
+
+    .list-item .member-img {
+        width: 100%;
+    }
+
+    .tour-place-item {
+        float: none;
+        width: 100%;
+        padding: 8px 8px;
+    }
+
+    .contact-input {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .contact-information {
+        width: 100%;
+    }
+
+    .contact-input .input-email,
+    .contact-input .input-name {
+        width: 95%;
+    }
+
+    #slider .text-content {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 10px 12px;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #slider .text-description {
+        margin-top: 10px;
+    }
+}

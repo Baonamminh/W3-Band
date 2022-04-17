@@ -1,0 +1,519 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+1. Từ ngoài vào trong.
+2. Từ trên xuống dưới.
+3. Từ tổng quan đến chi tiết.
+*/
+
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Hình dáng
+*/
+
+html {
+    font-family: Helvectica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+#main {
+    overscroll-behavior: smooth;
+}
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    height: 46.5px;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 46.5px;
+    padding: 0 24px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li {
+    min-width: 160px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    color: #000;
+    text-decoration: none;
+    line-height: 36px;
+    padding: 0 12px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#search-button {
+    display: inline-block;
+    float: right;
+}
+
+#search-button .search-icon {
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 22px;
+    display: block;
+}
+
+#search-button .search-icon:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+/* header */
+
+/* slider */
+#slider .slideshow-container{
+    margin: auto;
+    position: relative;
+}
+
+.mySlides img {
+    width: 100%;
+    margin-top: 47px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.3s;
+}
+
+  /* Caption text */
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    text-align: center;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+/* slider */
+
+
+#content {
+
+}
+/* About */
+#content .content-about,
+#content .content-tour,
+#content .content-contact {
+    padding: 64px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-heading {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+#content .content-sub-heading {
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 25px 0;
+    text-align: center;
+}
+
+#content .content-paragrahp {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+#content .member-list {
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+#content .list-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 56px;
+}
+
+.list-item .member-name {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.list-item .member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+
+/* About */
+
+/* Tour */
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .content-tour {
+    color: #fff;
+}
+
+.tour-section .ticket-time li {
+    background-color: #fff;
+    color: #000;
+    list-style: none;
+    padding: 15px 16px;
+    font-size: 15px;
+    border-bottom: 1px #ddd solid;
+}
+
+.ticket-time .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 6px 16px;
+}
+
+.ticket-time .ticket-quantity {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 3px 7px;
+    margin-right: 16px;
+}
+
+.tour-place-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.tour-place-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+
+}
+
+.place-position {
+    width: 100%;
+    display: block;
+}
+
+.place-position:hover {
+    opacity: 0.6;
+}
+
+.place-options {
+    background-color: #fff;
+    color: #000;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.place-heading {
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.place-time {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.place-paragrahp {
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+.place-button {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: none;
+}
+
+.place-button:hover,
+.contact-send .button-send:hover {
+    background-color: #ccc;
+    color: #000;
+}
+/*tour*/
+
+/*contact*/
+form {
+    margin-left: 5px;
+}
+
+.contact-paragraph {
+    padding-top: 20px;
+    margin-right: -20px;
+}
+
+.contact-information {
+    display: inline-block;
+    width: 45%;
+    padding: 15px 8px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.information-place .ti-location-pin,
+.information-phone .ti-mobile,
+.information-email .ti-email {
+    margin-right: 10px;
+}
+
+.contact-input {
+    display: inline-block;
+    float: right;
+    width: 55%;
+    padding: 5px 10px;
+    margin-right: -10px;
+}
+
+.contact-input .input-email,
+.contact-input .input-name {
+    padding: 11px;
+    margin-right: 20px;
+    width: 44%;
+}
+
+.contact-input .input-message {
+    padding: 10px;
+    margin-top: 12px;
+    width: 94.5%;
+}
+
+.contact-send {
+    padding: 14px 18px;
+}
+
+.contact-send .button-send {
+    float: right;
+    padding: 10px 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+/*contact*/
+
+
+/*map*/
+.content-map img {
+    width: 100%;
+}
+
+/*map*/
+
+
+#footer {
+
+
+}
+
+#footer .footer-social {
+    padding: 64px 0;
+    text-align: center;
+}
+
+#footer .footer-social .social-icon {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+#footer .footer-social a:hover {
+    opacity: 0.3;
+}
+
+.footer-social .copy-right {
+    padding-top: 16px;
+    font-size: 12px;
+}
+
+.copy-right .copy-right-link {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #000;
+    opacity: 0.6;
+}
+/*modal*/
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 40px);
+    animation: modalFade ease 0.4s;
+}
+
+.modal-head {
+    background-color: #009687;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.x-button {
+    position: absolute;
+    color: #fff;
+    right: 0;
+    z-index: 1;
+    padding: 12px;
+    font-size: 10px;
+}
+
+.x-button:hover {
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding: 13px;
+}
+
+.body-label .quantity-paragraph,
+.body-label .email-paragraph {
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 6px;
+    font-size: 15px;
+}
+
+.modal-body .modal-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.modal-body .buy-button {
+    width: 100%;
+    background-color: #009688;
+    border: none;
+    padding: 20px 0px;
+    margin-top: 16px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    font-style: bold;
+}
+
+.modal-footer .close-button:hover,
+.modal-body .buy-button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-footer .modal-help {
+    float: right;
+    padding: 12px 18px;
+}
+
+.modal-footer a {
+    color: #009688;
+}
+
+.modal-footer .close-button {
+    padding: 10px 10px;
+    margin: 13px;
+    background-color: #f44336;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@keyframes modalFade {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+/*modal*/
